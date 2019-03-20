@@ -12,6 +12,7 @@ public class HelloWorld {
         System.out.println(++x);
         System.out.println(x);
 
+
 //        int x = 4;
 //        x = x + 5;
         int a = 4;
@@ -32,6 +33,7 @@ public class HelloWorld {
 //        y = y - x;
         int d = 10;
         int e = 2;
+        // 10 / 2 = 5
         d /= e;
         // 2 - 5 = -3
         e -= d;
