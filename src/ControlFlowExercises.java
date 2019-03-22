@@ -5,7 +5,7 @@ public class ControlFlowExercises {
 
 //        int i = 5;
 //        while(i <= 15){
-//            System.out.println(i);
+//            System.out.print(i + " ");
 //            i++;
 //        }
 //
@@ -39,27 +39,27 @@ public class ControlFlowExercises {
 
         Scanner scanner = new Scanner(System.in);
         String answer = "";
-//        do {
-//            System.out.println("Please enter a positive integer:");
-//            int input = scanner.nextInt();
-//            String line = "|";
-//            System.out.printf("%s %1s %s %1s %s%n", "number", line, "squared", line, "cubed");
-//            System.out.printf("------ | ------- | -----%n");
-//
-//            for (int i = 1; i <= input; i++) {
-//                int num = i;
-//                int square = i * i;
-//                int cube = i * i * i;
-//                int length = (int) (Math.log10(square) + 1);
-//                if (length == 2) {
-//                    System.out.printf("%d%7s %d%7s %d%n", num, line, square, line, cube);
-//                } else {
-//                    System.out.printf("%d%7s %d%8s %d%n", num, line, square, line, cube);
-//                }
-//            }
-//            System.out.println("Would you like to continue? y/n");
-//            answer = scanner.next();
-//        } while (answer.equals("y"));
+        do {
+            System.out.println("Please enter a positive integer:");
+            int input = scanner.nextInt();
+            String line = "|";
+            System.out.printf("%s %1s %s %1s %s%n", "number", line, "squared", line, "cubed");
+            System.out.printf("------ | ------- | -----%n");
+
+            for (int i = 1; i <= input; i++) {
+                int num = i;
+                int square = i * i;
+                int cube = i * i * i;
+                int length = (int) (Math.log10(square) + 1);
+                if (length == 2) {
+                    System.out.printf("%d%7s %d%7s %d%n", num, line, square, line, cube);
+                } else {
+                    System.out.printf("%d%7s %d%8s %d%n", num, line, square, line, cube);
+                }
+            }
+            System.out.println("Would you like to continue? y/n");
+            answer = scanner.next();
+        } while (answer.equals("y"));
 
 
         do {
@@ -71,10 +71,8 @@ public class ControlFlowExercises {
                 System.out.println("B");
             }else if(67 <= grade && grade <= 79){
                 System.out.println("C");
-
             }else if(60 <= grade && grade <= 66){
                 System.out.println("D");
-
             }else if(0 <= grade && grade <= 59){
                 System.out.println("F");
             }else {
