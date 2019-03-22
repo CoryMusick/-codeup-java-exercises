@@ -1,6 +1,7 @@
 public class StringExercise {
     public static void main(String[] args) {
-        String pinkFloyd = "We don't need no education \nWe dont need no thought control";
+        String pinkFloyd = "We don't need no education\n" +
+                "We dont need no thought control";
         System.out.println(pinkFloyd);
         System.out.println();
         String checkThisOut = "Check \"this\" out!, \"s inside of \"s";
