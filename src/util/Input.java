@@ -13,9 +13,8 @@ public class Input {
     }
 
     public boolean yesNo(){
-        scanner.nextLine();
         String answer = scanner.nextLine();
-        if (answer.equals("yes") || answer.equals("Yes") || answer.equals("y")){
+        if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")){
             return true;
         }else return false;
     }
