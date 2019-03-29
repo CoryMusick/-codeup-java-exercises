@@ -8,7 +8,7 @@ public class MoviesApplication {
 
 
    static public int menu(){
-        Input input = new Input();
+       Input input = new Input();
         System.out.println("What would you like to do?");
         System.out.println();
         System.out.println("0 - exit");
@@ -37,16 +37,19 @@ public class MoviesApplication {
                    for (Movie movie : allMovies) {
                        System.out.println(movie.getName());
                    }
+                   break;
                case 2:
                    for (Movie movie : allMovies) {
                        if (movie.getCategory().equals("animated"))
                            System.out.println(movie.getName());
                    }
+                   break;
                case 3:
                    for (Movie movie : allMovies) {
                        if (movie.getCategory().equals("drama"))
                            System.out.println(movie.getName());
                    }
+                   break;
                case 4:
                    for (Movie movie : allMovies) {
                        if (movie.getCategory().equals("horror"))
@@ -54,9 +57,10 @@ public class MoviesApplication {
                    }
                case 5:
                    for (Movie movie : allMovies) {
-                       if (movie.getCategory().equals("sci-fi"))
+                       if (movie.getCategory().equals("scifi"))
                            System.out.println(movie.getName());
                    }
+                   break;
            }
            keepGoing = input.yesNo("Would you like to continue?");
        }

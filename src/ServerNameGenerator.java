@@ -3,7 +3,7 @@ public class ServerNameGenerator {
     public static String[] nouns = {"toothbrush","cat","zebra","puma","ocelot","cow", "moose","mouse","flamingo","lion"};
 
     public static String generator(String[] array){
-      return array[(int) (Math.random()* 9)];
+      return array[(int) (Math.random()* (array.length))];
     }
 
     public static String createName(String[] array1, String[] array2){
