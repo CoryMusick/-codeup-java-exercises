@@ -5,13 +5,13 @@ import util.Input;
 
 
 public class GradesApplication {
-    public static void getUsernames(HashMap<String,Student> students){
+    public static void getUsernames(Map<String,Student> students){
         students.forEach((String, Student) ->{
             System.out.printf("|%s| ",String);
         });
     }
     public static void main(String[] args) {
-        HashMap<String, Student> students = new HashMap<>();
+        Map<String, Student> students = new HashMap<>();
 
         Student Tim = new Student("Tim");
         Student Mike = new Student("Mike");
@@ -59,20 +59,13 @@ public class GradesApplication {
                 System.out.println("All Grades: ");
                 student.getAllGrades();
                 System.out.println("Current Average: " + student.getGradeAverage() + "\n");
-
-
             }else{
                 System.out.println("Sorry, no student found with the github username of \""+selection+"\"");
             }
-
             run = input.yesNo("Would you like to see another student?");
-
             if(!run){
                 System.out.println("Thank you and have a nice day!");
             }
-
-
-
         }
     }
 }

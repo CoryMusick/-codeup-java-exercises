@@ -20,11 +20,11 @@ public class Student {
     };
     // returns the average of the students grades
     public double getGradeAverage(){
-        int total = 0;
+        double total = 0;
         for(int i = 0; i<grades.size(); i++){
             total += grades.get(i);
         }
-        return (double)total/grades.size();
+        return total/grades.size();
     }
 
     public void getAllGrades(){
